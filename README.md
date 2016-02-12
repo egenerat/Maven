@@ -13,6 +13,14 @@ mvn archetype:generate -DgroupId=com.mycompany.app -DartifactId=my-app -Darchety
 
 
 
+[INFO] --- maven-compiler-plugin:3.2:compile (default-compile) @ simple-jar ---
+[INFO] Nothing to compile - all classes are up to date
+
+First build and mvn clean install
+[INFO] --- maven-compiler-plugin:3.2:compile (default-compile) @ simple-jar ---
+[INFO] Changes detected - recompiling the module!
+
+
 
 1-simple-jar
 
