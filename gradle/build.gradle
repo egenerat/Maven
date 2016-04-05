@@ -1,0 +1,10 @@
+task hello {
+    doLast {
+        println 'Hello world!'
+    }
+}
+
+// Equivalent concise syntax
+task hello2 << {
+    println 'Hello world 2!'
+}
