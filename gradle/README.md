@@ -1,4 +1,5 @@
 gradle hello
+
 gradle -q hello hello2
 
 Command line options:
