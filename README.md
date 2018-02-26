@@ -10,20 +10,6 @@ mvn --version
     OS name: "windows 7", version: "6.1", arch: "amd64", family: "windows"
 ```
 
-With CMD:
-```
-mvn archetype:generate -DgroupId=com.mycompany.app -DartifactId=my-app -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
-```
-
-
-[INFO] --- maven-compiler-plugin:3.2:compile (default-compile) @ simple-jar ---
-[INFO] Nothing to compile - all classes are up to date
-
-First build and mvn clean install
-[INFO] --- maven-compiler-plugin:3.2:compile (default-compile) @ simple-jar ---
-[INFO] Changes detected - recompiling the module!
-
-
 
 ## 1-simple-jar
 
@@ -34,6 +20,15 @@ mvn archetype:generate -DgroupId=io.github.egenerat -DartifactId=simple-jar -Dar
 to generate a jar
 ```
 mvn package
+```
+
+```
+[INFO] --- maven-compiler-plugin:3.2:compile (default-compile) @ simple-jar ---
+[INFO] Nothing to compile - all classes are up to date
+
+First build and mvn clean install
+[INFO] --- maven-compiler-plugin:3.2:compile (default-compile) @ simple-jar ---
+[INFO] Changes detected - recompiling the module!
 ```
 
 Run the jar
