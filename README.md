@@ -1,3 +1,5 @@
+# Maven step by step
+
 From http://maven.apache.org/guides/getting-started/maven-in-five-minutes.html
 
 ```
@@ -37,9 +39,6 @@ Hello world!
 ```
 
 ## 2-simple-dependency
-```
-mvn archetype:generate -DgroupId=io.github.egenerat -DartifactId=app -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
-```
 
 Create with 2 different group-id
 Check the difference between 2 namespaces and 2 groupId
