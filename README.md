@@ -1,5 +1,6 @@
 From http://maven.apache.org/guides/getting-started/maven-in-five-minutes.html
 
+```
 mvn --version
     Apache Maven 3.0.5 (r01de14724cdef164cd33c7c8c2fe155faf9602da; 2013-02-19 14:51:28+0100)
     Maven home: D:\apache-maven-3.0.5\bin\..
@@ -7,10 +8,12 @@ mvn --version
     Java home: C:\Program Files\Java\jdk1.6.0_25\jre
     Default locale: nl_NL, platform encoding: Cp1252
     OS name: "windows 7", version: "6.1", arch: "amd64", family: "windows"
+```
 
 With CMD:
+```
 mvn archetype:generate -DgroupId=com.mycompany.app -DartifactId=my-app -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
-
+```
 
 
 [INFO] --- maven-compiler-plugin:3.2:compile (default-compile) @ simple-jar ---
@@ -24,21 +27,24 @@ First build and mvn clean install
 
 1-simple-jar
 
-
+```
 mvn archetype:generate -DgroupId=io.github.egenerat -DartifactId=simple-jar -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
-
+```
 
 to generate a jar
+```
 mvn package
+```
 
 Run the jar
-java -cp target/simple-jar-1.0-SNAPSHOT.jar io.github.egenerat.App
+```java -cp target/simple-jar-1.0-SNAPSHOT.jar io.github.egenerat.App
 Hello world!
-
+```
 
 2-simple-dependency
+```
 mvn archetype:generate -DgroupId=io.github.egenerat -DartifactId=app -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
-mvn archetype:generate -DgroupId=io.github.egenerat -DartifactId=app -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+```
 
 Create with 2 different group-id
 Check the difference between 2 namespaces and 2 groupId
@@ -49,6 +55,7 @@ When running your Jar with java -jar, you're no longer running with the maven re
 5-provided-dependency-webserver
 mvn archetype:generate -DgroupId=io.github.egenerat -DartifactId=webapp -DarchetypeArtifactId=maven-archetype-webapp -DinteractiveMode=false
 
+```
 .
  |-- src
  |   `-- main
@@ -59,7 +66,7 @@ mvn archetype:generate -DgroupId=io.github.egenerat -DartifactId=webapp -Darchet
  |           |       `-- web.xml
  |           `-- index.jsp
   `-- pom.xml
-
+```
 
 8-reactor-modules
 The following command line switches are available:
