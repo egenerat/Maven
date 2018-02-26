@@ -25,7 +25,7 @@ First build and mvn clean install
 
 
 
-1-simple-jar
+## 1-simple-jar
 
 ```
 mvn archetype:generate -DgroupId=io.github.egenerat -DartifactId=simple-jar -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
@@ -41,7 +41,7 @@ Run the jar
 Hello world!
 ```
 
-2-simple-dependency
+## 2-simple-dependency
 ```
 mvn archetype:generate -DgroupId=io.github.egenerat -DartifactId=app -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
 ```
@@ -52,7 +52,7 @@ Check the difference between 2 namespaces and 2 groupId
 
 When running your Jar with java -jar, you're no longer running with the maven resolving of dependencies. You have to make sure that all the jars you depend on are available at the relative loacation specificied in the MANIFEST.mf file in your Jar. Usually, you would use the assembly plugin to create a distributable archive that creates this structure. Or you could use a uberjar/onejar plugin to included everything inside your Jar.
 
-5-provided-dependency-webserver
+## 5-provided-dependency-webserver
 mvn archetype:generate -DgroupId=io.github.egenerat -DartifactId=webapp -DarchetypeArtifactId=maven-archetype-webapp -DinteractiveMode=false
 
 ```
@@ -68,7 +68,7 @@ mvn archetype:generate -DgroupId=io.github.egenerat -DartifactId=webapp -Darchet
   `-- pom.xml
 ```
 
-8-reactor-modules
+## 8-reactor-modules
 The following command line switches are available:
 
     --resume-from - resumes a reactor the specified project (e.g. when it fails in the middle)
