@@ -73,3 +73,8 @@ The following command line switches are available:
     --non-recursive - do not use a reactor build, even if the current project declares modules and just build the project in the current directory
 
 Documentation: https://maven.apache.org
+
+A plugin is not run if there is no `<execution>` tag:
+
+- phase specifies during which Maven phase the plugin should be run
+- goal specifies which goal of the plugin needs to be executed
