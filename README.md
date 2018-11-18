@@ -72,9 +72,17 @@ The following command line switches are available:
     --fail-at-end - if a particular module build fails, continue the rest of the reactor and report all failed modules at the end instead
     --non-recursive - do not use a reactor build, even if the current project declares modules and just build the project in the current directory
 
+## Miscellaneous
+
 Documentation: https://maven.apache.org
 
 A plugin is not run if there is no `<execution>` tag:
 
 - phase specifies during which Maven phase the plugin should be run
 - goal specifies which goal of the plugin needs to be executed
+
+### Proxy configuration
+-Dhttp.proxyHost=<PROXY_IP> -Dhttp.proxyPort=<PROXY_PORT> -Dhttp.nonProxyHosts="localhost"
+
+Interesting ticket about incremental build in maven-compiler-plugin, since version 3.1
+https://issues.apache.org/jira/browse/MCOMPILER-209
